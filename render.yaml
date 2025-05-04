@@ -1,0 +1,16 @@
+services:
+- type: web
+  name: wav2lip-api
+  env: docker
+  plan: free
+  branch: main
+  dockerfilePath: Dockerfile
+  envVars:
+    - key: R2_BUCKET
+      value: fourgears-voice-responses
+    - key: R2_ENDPOINT
+      value: https://7ed5a57b6314805291b01d698ded64f1.r2.cloudflarestorage.com
+    - key: R2_ACCESS_KEY
+      sync: false
+    - key: R2_SECRET_KEY
+      sync: false
