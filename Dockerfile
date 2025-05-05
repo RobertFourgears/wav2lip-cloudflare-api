@@ -9,4 +9,5 @@ RUN git clone https://github.com/Rudrabha/Wav2Lip.git && \
     wget -q https://huggingface.co/Non-playing-Character/Wave2lip/resolve/main/wav2lip_gan.pth -O checkpoints/wav2lip_gan.pth
 COPY app.py .
 EXPOSE 5000
+ENV PORT=5000
 CMD ["python", "app.py"]
