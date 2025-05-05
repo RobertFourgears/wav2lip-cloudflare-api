@@ -48,3 +48,6 @@ def process_avatar():
         shutil.rmtree(os.path.join('Wav2Lip', 'temp'), ignore_errors=True)
 
     return jsonify({"status": "success"})
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
