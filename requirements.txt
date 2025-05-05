@@ -1,9 +1,22 @@
-flask
-boto3
-numpy
-opencv-contrib-python
-librosa
-tqdm
-numba
-torch
-torchvision
+# Web server
+Flask==2.2.3
+gunicorn==20.1.0
+
+# Audio / signal processing
+numpy>=1.19.5,<1.24
+scipy>=1.4.1
+soundfile>=0.10.3.post1
+librosa==0.8.1        # pin <0.9 so librosa.filters.mel has the expected signature
+
+# Deep learning
+torch>=1.7.1          # match your CUDA / CPU build
+torchvision>=0.8.2
+
+# Video / image I/O
+opencv-python>=4.2.0
+
+# Utilities
+tqdm>=4.36.0
+matplotlib>=3.3.0
+Pillow>=8.0.0
+h5py>=3.1.0
