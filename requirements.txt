@@ -1,9 +1,10 @@
 flask
 boto3
-numpy
+numpy==1.23.5
 opencv-contrib-python
-librosa
+librosa==0.8.1
 tqdm
 numba
 torch
 torchvision
+scipy==1.9.3
